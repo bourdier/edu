@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+}
+.dark-background {
+    background-color: #1F2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding-lr {
+    padding: 0px 300px 0px 300px;
+}
+
+/* Navbar */
+
+.nav-bar {
+    font: 200 18px "Roboto";
+    padding: 25px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font: 300 24px "Roboto";
+    color: #F9FAF8;
+    flex: 1 1 0%;
+}
+
+.header-link a {
+    color: #E5E7EB;
+    flex: 3 1 0%;
+}
+
+.header-link ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 15px;
+    justify-content: right;
+}
+
+/* hero-div */
+
+.hero-div {
+    display: flex;
+}
+
+.hero-text {
+    flex: 2 1 0%;
+    padding-right: 50px;
+}
+
+.hero-main {
+    font: 900 48px "Roboto";
+    color: #F9FAF8;
+    padding-bottom: 25px;
+}
+
+.hero-secondary {
+    font: 300 18px "Roboto";
+    color: #E5E7EB;
+    padding-bottom: 15px;
+}
+
+.signup-btn {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    font: 500 18px "Roboto";
+    padding: 4px 25px 4px 25px;
+    border-radius: 5px;
+}
+
+.signup-btn a {
+    color: #F9FAF8;
+}
+
+.hero-img img {
+    flex: 1 1 0%;
+    max-width:800px;
+    max-height:800px;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.infos-div img {
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* infos-div */
+
+.infos-div {
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+.infos-header {
+    font: 900 36px "Roboto";
+    color: #1F2937;
+}
+
+.infos-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font: 300 18px "Roboto";
+    color: #434343;
+    gap: 50px;
+}
+
+/* quotes-div */
+
+.quotes-div {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.quotes-text {
+    font: 200 italic 32px "Roboto";
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.quotes-author {
+    font: 400 20px "Roboto";
+    padding-top: 10px;
+    float: right;
+    padding-right: 125px;
+}
+
+/* action-div */
+
+.action-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.action-container {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 10px;
+    padding: 30px 100px 30px 100px;
+    display: flex;
+}
+
+.action-text {
+    flex: 3 1 0%;
+}
+
+.action-header {
+    font: 500 20px "Roboto";
+}
+
+.action-subtext {
+    font: 300 16px "Roboto";
+}
+
+.action-btn {
+    font: 500 18px "Roboto";
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;;
+    align-items: center;
+}
+
+.action-btn a {
+    color: #E5E7EB;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    color: #E5E7EB;
+    font: 300 16px "Roboto";
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.company {
+    font: 400 16px "Roboto";
+}
