@@ -1,18 +1,18 @@
-let username = prompt("Username:", "");
+let user = prompt("Username:", "");
 
-if (username == tb) {
+if (user === "tb") {
 
     let pass = prompt("Password:", "");
 
-    if (pass == "azerty") {
+    if (pass === "azerty") {
         alert("Welcome!");
-    } else if (pass == null || pass == "") {
-        alert("Canceled.")
+    } else if (pass === null || pass === "") {
+        alert("Canceled.");
     } else {
-        alert("Wrong password.")
+        alert("Wrong password.");
     }
-} else if (username == null || username == "" {
-    alert("Canceled.")
+} else if (user === null || user === "") {
+    alert("Canceled.");
 } else {
-    alert("Username not found.")
+    alert("Username not found.");
 }
