@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* general */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Raleway';
+    max-width: 1400px;
+    margin: auto;
+    padding: 45px 55px 0px 55px;
+}
+
+h1 { /* section title */
+    font-size: 22px;
+}
+
+h2 { /* filter title */
+    font-size: 18px;
+}
+
+h3 { /* card title */
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0065FC;
+}
+
+i {
+    padding-right: 5px;
+    color: #0065FC;
+}
+
+button {
+    font-family: 'Raleway';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.no-padding {
+    padding:0;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.directionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.directionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 45px;
+}
+
+nav a:hover {
+    border-top: 2px solid #0065FC;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+/* header */
+
+header h1 {
+    padding-top: 64px;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+}
+
+/* search */
+
+form#search {
+    padding-top: 16px;
+    display: flex;
+}
+
+.searchLocation {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.searchInput {
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchButton {
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+/* filter */
+
+.filterRow {
+    padding-top: 32px;
+    align-items: center;
+}
+
+.filterRow ul li {
+    display: inline;
+    padding-left: 32px;
+}
+
+.filterRow button {
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+}
+
+.filterRow button:hover {
+    background-color: #DEEBFF;
+}
+
+/* information */
+
+.infoBar {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.infoBar i { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    padding: 7px;
+    margin-right: 10px;
+    font-size: 10px;
+    height: 5px;
+    width: 5px;
+}
+
+/* main */
+/* lodging */
+
+#lodging {
+    display: flex;
+    gap: 40px;
+}
+
+.lodgingCard, .lodgingPopularCard p {
+    font-size: 14px;
+}
+
+/* lodging @ marseille */
+
+.lodgingHere {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    padding: 20px 40px;
+    justify-content: center;
+}
+
+.lodgingCard {
+    width:245px;
+    height:200px;
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    gap: 32px;
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #cccccc;
+}
+
+.lodgingCard h3, p, .ratingStars {
+    margin: 2px;
+    padding-left: 16px;
+}
+
+.ratingStars i {
+    height: 12px;
+    padding: 0;
+}
+
+.ratingStars i:last-of-type {
+    color: #F2F2F2;
+}
+
+.lodgingCard a:hover {
+    color:black;
+}
+
+.lodgingHere img {
+    width:240px;
+    height:125px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2px;
+}
+
+.lodgingRow {
+    gap: 32px;
+    padding-bottom: 32px;
+}
+
+.showMore {
+    padding-bottom: 32px;
+}
+
+/* most popular lodgings */
+
+.lodgingPopular {
+    width: auto;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    padding: 20px 40px;
+    justify-content: center;
+}
+
+.lodgingPopularTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lodgingPopularStats {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.lodgingPopular1, .lodgingPopular2, .lodgingPopular3 {
+    padding-bottom: 32px;
+}
+
+.lodgingPopularCard {
+    width:345px;
+    height:145px;
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #cccccc;
+}
+
+.ratingPopularCardText {
+    display: flex;
+}
+
+.ratingPopularStars {
+    border: 1px solid red;
+    margin: 0px;
+    padding-left: 16px;
+    margin-top: auto;
+}
+
+.ratingPopularStars i {
+    padding:0;
+}
+
+.ratingPopularStars i:last-of-type {
+    color: #F2F2F2;
+}
+
+.lodgingPopularCardText h3 {
+    margin: 0;
+    padding: 16px 16px 0px 16px;
+}
+
+.lodgingPopular img {
+    width:130px;
+    height:140px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    padding: 2px;
+}
+
+/* activities */
+
+#activities h2 {
+    padding-top: 60px;
+}
+
+.activitiesRow {
+    /* justify-content: center; */
+    gap: 42px;
+    padding-bottom: 64px;
+}
+
+.activitiesRow h3 {
+    margin: 0;
+    padding: 20px;
+}
+
+.activitiesRow img {
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 445px;
+    max-width: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.activitiesRow a:hover {
+    color: #000000;
+}
+
+.activitiesCardName {
+    border-radius: 0px 0px 10px 10px;
+    /* width: auto; */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 10px 10px #cccccc;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color:#F2F2F2;
+    padding: 45px 120px;
+    gap: 240px;
+}
+
+footer li {
+    margin: 0;
+    padding: 12px;
+}
+
