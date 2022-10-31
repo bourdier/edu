@@ -14,10 +14,6 @@ J'ai commencé en septembre 2022.
 
 - [Landing Page](https://trrb.github.io/formation/odin/landing-page/index.html)
 
-## freeCodeCamp 
-
-A venir.
-
 ## Openclassrooms
 
-A venir.
+- [Booki](https://trrb.xyz/formation/openclassrooms/booki/index.html)
