@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-    color: #0065FC;
+    color: #000000;
 }
 
 i {
@@ -85,6 +85,7 @@ nav a {
 
 nav a:hover {
     border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 nav ul li {
@@ -273,7 +274,10 @@ form#search {
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 20px 40px;
-    justify-content: center;
+}
+
+.lodgingPopularCard {
+    border: 1px solid magenta;
 }
 
 .lodgingPopularTitle {
@@ -288,11 +292,15 @@ form#search {
     justify-content: right;
 }
 
+.lodgingPopularStats i {
+    padding: 0;
+}
+
 .lodgingPopular1, .lodgingPopular2, .lodgingPopular3 {
     padding-bottom: 32px;
 }
 
-.lodgingPopularCard {
+.lodgingPopularCard a {
     width:345px;
     height:145px;
     max-width: auto;
@@ -304,15 +312,14 @@ form#search {
     box-shadow: 0px 10px 10px #cccccc;
 }
 
-.ratingPopularCardText {
+/*.ratingPopularCardText {
     display: flex;
-}
+}*/
 
 .ratingPopularStars {
     border: 1px solid red;
     margin: 0px;
     padding-left: 16px;
-    margin-top: auto;
 }
 
 .ratingPopularStars i {
@@ -321,6 +328,10 @@ form#search {
 
 .ratingPopularStars i:last-of-type {
     color: #F2F2F2;
+}
+
+.lodgingPopularCardText {
+    border: 1px solid cyan;
 }
 
 .lodgingPopularCardText h3 {
@@ -342,6 +353,10 @@ form#search {
     padding-top: 60px;
 }
 
+.activitiesCard {
+    width: 100%;
+}
+
 .activitiesRow {
     /* justify-content: center; */
     gap: 42px;
@@ -355,7 +370,7 @@ form#search {
 
 .activitiesRow img {
     border-radius: 10px 10px 0px 0px;
-    width: 300px;
+    width: 100%;
     height: 445px;
     max-width: auto;
     max-height: auto;
@@ -368,7 +383,6 @@ form#search {
 
 .activitiesCardName {
     border-radius: 0px 0px 10px 10px;
-    /* width: auto; */
     margin: 0;
     padding: 0;
     box-shadow: 0px 10px 10px #cccccc;
