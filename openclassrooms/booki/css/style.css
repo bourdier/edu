@@ -158,6 +158,8 @@ nav ul li {
 .filter-container {
     padding-top: 32px;
     align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .filter-container ul li {
@@ -215,6 +217,7 @@ nav ul li {
 
 .lodging-here {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -232,6 +235,8 @@ nav ul li {
 }
 
 .lodging-card {
+    display: flex;
+    flex-direction: column;
     width:245px;
     height:200px;
     max-width: auto;
@@ -271,8 +276,15 @@ nav ul li {
 }
 
 .lodging-row {
+    display: flex;
+    flex-direction: row;
     gap: 32px;
     padding-bottom: 32px;
+}
+
+.lodging-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .show-more {
@@ -282,16 +294,30 @@ nav ul li {
 /* popular lodging */
 
 .lodging-popular {
+    display: flex;
+    flex-direction: column;
     width: auto;
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 20px 40px;
 }
 
+.lodging-popular-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .lodging-popular-title {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.lodging-popular-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .lodging-popular-stats {
@@ -351,7 +377,8 @@ nav ul li {
 }
 
 .activities-row {
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
     gap: 42px;
     padding-bottom: 64px;
 }
@@ -408,6 +435,13 @@ footer li {
         flex-direction: column;
     }
 
+    .lodging-card h3,
+    .rating-stars,
+    .lodging-info {
+        margin: 2px;
+        padding-left: 16px;
+    }
+
     .lodging-here {
         width: auto;
     }
@@ -430,6 +464,31 @@ footer li {
         background-color: #FFFFFF;
         border-radius: 10px;
         box-shadow: 0px 10px 10px #cccccc;
+    }
+
+    .lodging-popular-container {
+        flex-direction: row;
+    }
+
+    .lodging-popular-card a {
+        width:252px;
+        height:145px;
+        max-width: auto;
+        max-height: auto;
+        display: flex;
+        border: 2px solid #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px #cccccc;
+        gap: 23px;
+    }
+
+    .lodging-popular-card img {
+        width:106px;
+        height:140px;
+        object-fit: cover;
+        border-radius: 10px 0px 0px 10px;
+        padding: 2px;
     }
 
     footer {  /* NEED TO BE FIXED!! */
