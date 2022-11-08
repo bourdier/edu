@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* general */
+
 body {
     background-color: #ffffff;
     font-family: 'Raleway';
     max-width: 1400px;
     margin: auto;
-    padding: 45px 50px 0px 50px;
-}
-
-header i {
-    padding-right: 5px;
-    color: #0065FC;
+    padding: 45px 55px 0px 55px;
 }
 
 h1 { /* section title */
-    font-size: 22px; /* 1.375rem */
+    font-size: 22px;
 }
 
 h2 { /* filter title */
@@ -25,7 +22,7 @@ h3 { /* card title */
     font-size: 16px;
 }
 
-.header-info {
+p {
     font-size: 16px;
 }
 
@@ -38,8 +35,9 @@ a:hover {
     color: #000000;
 }
 
-.no-padding { /* i */
-    padding: 0;
+i {
+    padding-right: 5px;
+    color: #0065FC;
 }
 
 button {
@@ -57,26 +55,28 @@ ul {
     margin: 0;
 }
 
+.no-padding {
+    padding:0;
+}
+
 .semi-bold {
     font-weight: 600;
 }
 
-.direction-row {
+.directionRow {
     display: flex;
     flex-direction: row;
 }
 
-.direction-column {
+.directionColumn {
     display: flex;
     flex-direction: column;
 }
 
 /* nav */
-
 nav {
     display: flex;
     align-items: center;
-    margin-bottom: 53px;
 }
 
 nav a {
@@ -107,26 +107,23 @@ nav ul li {
 
 /* header */
 
-.header-title h1 {
-    margin-bottom: 8px;
+header h1 {
+    padding-top: 64px;
 }
 
-.header-info {
-    margin-bottom: 20px;
+header p {
+    margin: 0;
+    padding: 0;
 }
 
-/* search bar */
+/* search */
 
-.search-container {
-    margin-bottom: 32px;
-}
-
-.search-form {
+form#search {
     padding-top: 16px;
     display: flex;
 }
 
-.search-location {
+.searchLocation {
     border-radius: 10px 0 0 10px;
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
@@ -135,16 +132,16 @@ nav ul li {
     text-align: center;
 }
 
-.search-input {
+.searchInput {
     border: 1px solid #F2F2F2;
     padding: 10px;
 }
 
-.search-input:focus {
+.searchInput:focus {
     outline: none;
 }
 
-.search-button {
+.searchButton {
     border-radius: 0 10px 10px 0;
     border: 1px solid #0065FC;
     background-color: #0065FC;
@@ -155,38 +152,37 @@ nav ul li {
 
 /* filter */
 
-.filter-container {
+.filterRow {
     padding-top: 32px;
     align-items: center;
 }
 
-.filter-container ul li {
+.filterRow ul li {
     display: inline;
     padding-left: 32px;
 }
 
-.filter-container button {
+.filterRow button {
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
     border: 2px solid #D9D9D9;
     background-color: #FFFFFF;
-    font-size: 17px;
 }
 
-.filter-container button:hover {
+.filterRow button:hover {
     background-color: #DEEBFF;
 }
 
 /* information */
 
-.info-container {
+.infoBar {
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
     align-items: center;
 }
 
-.info-container i { 
+.infoBar i { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,12 +190,12 @@ nav ul li {
     border-radius: 100%;
     padding: 7px;
     margin-right: 10px;
-    margin-bottom: auto;
     font-size: 10px;
     height: 5px;
     width: 5px;
 }
 
+/* main */
 /* lodging */
 
 #lodging {
@@ -207,13 +203,13 @@ nav ul li {
     gap: 40px;
 }
 
-.lodging-info {
+.lodgingCard, .lodgingPopularCard p {
     font-size: 14px;
 }
 
-/* lodging-here */
+/* lodging @ marseille */
 
-.lodging-here {
+.lodgingHere {
     display: flex;
     width: 100%;
     height: 100%;
@@ -223,15 +219,7 @@ nav ul li {
     justify-content: center;
 }
 
-.lodging-here img {
-    width:240px;
-    height:125px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    padding: 2px;
-}
-
-.lodging-card {
+.lodgingCard {
     width:245px;
     height:200px;
     max-width: auto;
@@ -244,68 +232,75 @@ nav ul li {
     box-shadow: 0px 10px 10px #cccccc;
 }
 
-.lodging-card h3,
-.rating-stars,
-.lodging-info {
+.lodgingCard h3, p, .ratingStars {
     margin: 2px;
     padding-left: 16px;
 }
 
-.rating-stars li {
-    color: #0065FC;
-    font-size: 12px;
+.ratingStars i {
+    height: 12px;
     padding: 0;
 }
 
-.ratings-stars {
-    margin-top: auto;
-    margin-bottom: 12px;
-}
-
-.rating-stars li:last-of-type {
+.ratingStars i:last-of-type {
     color: #F2F2F2;
 }
 
 .lodgingCard a:hover {
-    color: #000000;
+    color:black;
 }
 
-.lodging-row {
+.lodgingHere img {
+    width:240px;
+    height:125px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2px;
+}
+
+.lodgingRow {
     gap: 32px;
     padding-bottom: 32px;
 }
 
-.show-more {
+.showMore {
     padding-bottom: 32px;
 }
 
-/* popular lodging */
+/* most popular lodgings */
 
-.lodging-popular {
+.lodgingPopular {
     width: auto;
     border-radius: 10px;
     background-color: #D9D9D9;
     padding: 20px 40px;
 }
 
-.lodging-popular-title {
+.lodgingPopularCard {
+    border: 1px solid magenta;
+}
+
+.lodgingPopularTitle {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.lodging-popular-stats {
-    color: #0065FC;
+.lodgingPopularStats {
     width: 50%;
     display: flex;
     justify-content: right;
 }
 
-.lodging-popular-card {
-    margin-bottom: 33px;
+.lodgingPopularStats i {
+    padding: 0;
 }
 
-.lodging-popular-card a {
+.lodgingPopular1, .lodgingPopular2, .lodgingPopular3 {
+    padding-bottom: 32px;
+}
+
+.lodgingPopularCard a {
     width:345px;
     height:145px;
     max-width: auto;
@@ -317,23 +312,39 @@ nav ul li {
     box-shadow: 0px 10px 10px #cccccc;
 }
 
-.lodging-popular-card h3 {
+/*.ratingPopularCardText {
+    display: flex;
+}*/
+
+.ratingPopularStars {
+    border: 1px solid red;
+    margin: 0px;
+    padding-left: 16px;
+}
+
+.ratingPopularStars i {
+    padding:0;
+}
+
+.ratingPopularStars i:last-of-type {
+    color: #F2F2F2;
+}
+
+.lodgingPopularCardText {
+    border: 1px solid cyan;
+}
+
+.lodgingPopularCardText h3 {
     margin: 0;
     padding: 16px 16px 0px 16px;
 }
 
-.lodging-popular-card img {
+.lodgingPopular img {
     width:130px;
     height:140px;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
     padding: 2px;
-}
-
-
-.lodging-popular-card .rating-stars {
-    margin-top: auto;
-    margin-bottom: 12px;
 }
 
 /* activities */
@@ -342,26 +353,22 @@ nav ul li {
     padding-top: 60px;
 }
 
-.activities-card {
+.activitiesCard {
     width: 100%;
-    border-radius: 0px 0px 10px 10px;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0px 10px 10px #ececec;
 }
 
-.activities-row {
+.activitiesRow {
     /* justify-content: center; */
     gap: 42px;
     padding-bottom: 64px;
 }
 
-.activities-row h3 {
+.activitiesRow h3 {
     margin: 0;
     padding: 20px;
 }
 
-.activities-row img {
+.activitiesRow img {
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     height: 445px;
@@ -370,8 +377,15 @@ nav ul li {
     object-fit: cover;
 }
 
-.activities-row a:hover {
+.activitiesRow a:hover {
     color: #000000;
+}
+
+.activitiesCardName {
+    border-radius: 0px 0px 10px 10px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 10px 10px #cccccc;
 }
 
 /* footer */
@@ -388,55 +402,3 @@ footer li {
     padding: 12px;
 }
 
-/* media-queries tablet */
-
-@media screen and (max-width: 992px) { 
-
-    html {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        padding: 45px 72px 0px 72px;
-        /* width: 100%; */
-        max-width: 992px;
-        margin: 0;
-    }
-
-    #lodging {
-        flex-direction: column;
-    }
-
-    .lodging-here {
-        width: auto;
-    }
-
-    .lodging-here img {
-        width: 100%;
-        height: 125px;
-        object-fit: cover;
-        border-radius: 10px 10px 0px 0px;
-    }
-    
-    .lodging-card {
-        width: 245px;
-        height: 200px;
-        max-width: auto;
-        max-height: auto;
-        display: flex;
-        gap: 22px;
-        border: 2px solid #FFFFFF;
-        background-color: #FFFFFF;
-        border-radius: 10px;
-        box-shadow: 0px 10px 10px #cccccc;
-    }
-
-    footer {  /* NEED TO BE FIXED!! */
-        width: 100%;
-        max-width: 992px;
-        gap: 30px;
-        padding: 45px 0px;
-    }
-    
-}
