@@ -71,6 +71,8 @@ ul {
     flex-direction: column;
 }
 
+
+
 /* nav */
 
 nav {
@@ -105,6 +107,8 @@ nav ul li {
     justify-content: right;
 }
 
+
+
 /* header */
 
 .header-title h1 {
@@ -114,6 +118,8 @@ nav ul li {
 .header-info {
     margin-bottom: 20px;
 }
+
+
 
 /* search bar */
 
@@ -153,6 +159,8 @@ nav ul li {
     text-align: center;
 }
 
+
+
 /* filter */
 
 .filter-container {
@@ -177,6 +185,8 @@ nav ul li {
     background-color: #DEEBFF;
 }
 
+
+
 /* information */
 
 .info-container {
@@ -200,6 +210,8 @@ nav ul li {
     width: 5px;
 }
 
+
+
 /* lodging */
 
 #lodging {
@@ -211,6 +223,8 @@ nav ul li {
     font-size: 14px;
 }
 
+
+
 /* lodging-here */
 
 .lodging-here {
@@ -219,35 +233,51 @@ nav ul li {
     height: 100%;
     border-radius: 10px;
     background-color: #D9D9D9;
-    padding: 20px 40px;
+    padding: 20px 40px 0px 40px;
     justify-content: center;
 }
 
 .lodging-here img {
-    width:240px;
+    width: 100%;
     height:125px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-    padding: 2px;
+    box-sizing: border-box;
+    border: 4px solid #FFFFFF;
 }
 
 .lodging-card {
-    width:245px;
-    height:200px;
-    max-width: auto;
-    max-height: auto;
+    margin: 0;
+    position: relative;
     display: flex;
-    gap: 32px;
-    border: 2px solid #FFFFFF;
+    flex-direction: column;
+    width: 100%;
+    height:200px;
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 10px 10px #cccccc;
+    gap: 4px;
+}
+
+
+.lodging-card a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+.lodging-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .lodging-card h3,
 .rating-stars,
 .lodging-info {
-    margin: 2px;
+    margin: 3px;
     padding-left: 16px;
 }
 
@@ -257,17 +287,14 @@ nav ul li {
     padding: 0;
 }
 
-.ratings-stars {
-    margin-top: auto;
-    margin-bottom: 12px;
+.rating-stars ul {
+    display: flex;
+    flex-direction: row;
 }
+
 
 .rating-stars li:last-of-type {
     color: #F2F2F2;
-}
-
-.lodgingCard a:hover {
-    color: #000000;
 }
 
 .lodging-row {
@@ -279,18 +306,28 @@ nav ul li {
     padding-bottom: 32px;
 }
 
+
+
 /* popular lodging */
 
 .lodging-popular {
+    display: flex;
+    flex-direction: column;
     width: auto;
     border-radius: 10px;
     background-color: #D9D9D9;
-    padding: 20px 40px;
+    padding: 20px 40px 0px 40px;
+}
+
+.lodging-popular-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .lodging-popular-title {
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -305,35 +342,51 @@ nav ul li {
     margin-bottom: 33px;
 }
 
-.lodging-popular-card a {
-    width:345px;
-    height:145px;
-    max-width: auto;
-    max-height: auto;
-    display: flex;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px #cccccc;
-}
-
 .lodging-popular-card h3 {
     margin: 0;
     padding: 16px 16px 0px 16px;
 }
 
+.lodging-popular-card {
+    position: relative;
+    width: 345px;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #cccccc;
+    padding:0;
+}
+
 .lodging-popular-card img {
-    width:130px;
-    height:140px;
+    width: 130px;
+    height: 144px;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
-    padding: 2px;
+    box-sizing: border-box;
+    border: 4px solid #FFFFFF;
+}
+
+.lodging-popular-card a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 
 .lodging-popular-card .rating-stars {
     margin-top: auto;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
+}
+
+.lodging-popular-content {
+    display: flex;
+    flex-direction: column;
 }
 
 /* activities */
@@ -343,36 +396,58 @@ nav ul li {
 }
 
 .activities-card {
+    position: relative;
     width: 100%;
-    border-radius: 0px 0px 10px 10px;
+    height: 444px;
+    border-radius: 10px;
     margin: 0;
     padding: 0;
     box-shadow: 0px 10px 10px #ececec;
 }
 
-.activities-row {
-    /* justify-content: center; */
-    gap: 42px;
-    padding-bottom: 64px;
-}
-
-.activities-row h3 {
-    margin: 0;
-    padding: 20px;
-}
-
-.activities-row img {
-    border-radius: 10px 10px 0px 0px;
+.activities-card img {
+    position: absolute;
+    border-radius: 10px;
     width: 100%;
-    height: 445px;
+    height: 100%;
     max-width: auto;
     max-height: auto;
     object-fit: cover;
 }
 
-.activities-row a:hover {
-    color: #000000;
+.activities-title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+    bottom: 0;
 }
+
+.activities-title h3 {
+    margin: 0;
+    padding: 20px;
+
+}
+
+.activities-row {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    padding-bottom: 64px;
+}
+
+.activities-card a::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
 
 /* footer */
 
@@ -392,17 +467,15 @@ footer li {
 
 @media screen and (max-width: 992px) { 
 
-    html {
-        margin: 0;
-        padding: 0;
-    }
-
     body {
         padding: 45px 72px 0px 72px;
-        /* width: 100%; */
         max-width: 992px;
         margin: 0;
     }
+
+
+
+    /* lodging-here */
 
     #lodging {
         flex-direction: column;
@@ -417,6 +490,7 @@ footer li {
         height: 125px;
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
+        border: 2px solid #FFFFFF;
     }
     
     .lodging-card {
@@ -425,12 +499,24 @@ footer li {
         max-width: auto;
         max-height: auto;
         display: flex;
-        gap: 22px;
+        gap: 2px;
         border: 2px solid #FFFFFF;
         background-color: #FFFFFF;
         border-radius: 10px;
         box-shadow: 0px 10px 10px #cccccc;
     }
+
+
+
+    /* lodging-popular */
+
+    
+
+    /* activities */
+
+
+
+    /* footer */
 
     footer {  /* NEED TO BE FIXED!! */
         width: 100%;
