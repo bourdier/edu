@@ -47,13 +47,14 @@
     /* lodging-popular */
 
     .lodging-popular {
-        width: 100%; /* Need to be fixed */
+        width: auto;
+        max-width: 100%;
     }
 
     .lodging-popular-container {
         display: flex;
         flex-direction: row;
-        gap: 22px;
+        gap: 22px;      
     }
 
     .lodging-popular-card {
@@ -64,9 +65,7 @@
     }
 
     .lodging-popular-card img { /* Need to be fixed */
-        width: 100%;
         max-width: 106px;
-        height: 100%;
         max-height: 144px;
     }
 
@@ -78,10 +77,6 @@
         height: 267px;
     }
 
-    .lodging-popular-stats {
-        width: 50%;
-    }
-
     .activities-title {
         height: 56px;
         display: flex;
@@ -90,11 +85,21 @@
 
     /* footer */
 
-    footer {  /* NEED TO BE FIXED!! */
-        width: 100%;
-        max-width: 992px;
+    footer { 
+        width: auto;
         gap: 30px;
-        padding: 45px 0px;
+        padding: 45px 120px;
     }
     
+}
+
+
+
+/* Media-queries for mobile */
+
+@media screen and (max-width: 768px) { 
+    body {
+        /* test */
+        background-color: red; 
+    }
 }
