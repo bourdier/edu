@@ -6,6 +6,7 @@ J'ai appris le développement et l'intégration web auprès de :
 - [OpenClassrooms](https://openclassrooms.com),
 - [freeCodeCamp](https://freecodecamp.org),
 - [The Odin Project](https://theodinproject.com)
+- [Harvard CS50](https://cs50.harvard.edu/web/2020/)
 
 J'ai commencé en septembre 2022.
 
