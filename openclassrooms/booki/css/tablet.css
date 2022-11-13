@@ -13,6 +13,14 @@
 
     /* lodging-here */
 
+
+    .lodging-card h3,
+    .rating-stars,
+    .lodging-info {
+        /* margin: 3px */
+        padding-left: 0px;
+    }
+
     #lodging {
         flex-direction: column;
     }
@@ -57,6 +65,10 @@
         gap: 22px;      
     }
 
+    .lodging-popular-content {
+        padding: 10px 10px 0px 10px;
+    }
+
     .lodging-popular-card {
         position: relative;
         width: 100%;
@@ -64,7 +76,7 @@
         max-height: 144px;
     }
 
-    .lodging-popular-card img { /* Need to be fixed */
+    .lodging-popular-card img { 
         max-width: 106px;
         max-height: 144px;
     }
@@ -91,15 +103,4 @@
         padding: 45px 120px;
     }
     
-}
-
-
-
-/* Media-queries for mobile */
-
-@media screen and (max-width: 768px) { 
-    body {
-        /* test */
-        background-color: red; 
-    }
 }

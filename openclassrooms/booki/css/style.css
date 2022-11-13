@@ -276,13 +276,14 @@ nav ul li {
 .lodging-content {
     display: flex;
     flex-direction: column;
+    padding-left: 16px;
 }
 
 .lodging-card h3,
 .rating-stars,
 .lodging-info {
-    margin: 3px;
-    padding-left: 16px;
+    margin: 3px 3px 3px 0px;
+    /* padding-left: 16px; */
 }
 
 .rating-stars li {
@@ -344,7 +345,7 @@ nav ul li {
 
 .lodging-popular-card h3 {
     margin: 0;
-    padding: 16px 16px 0px 16px;
+    /* padding: 16px 16px 0px 16px; */
 }
 
 .lodging-popular-card {
@@ -389,6 +390,7 @@ nav ul li {
 .lodging-popular-content {
     display: flex;
     flex-direction: column;
+    padding: 16px 16px 0px 16px;
 }
 
 /* activities */

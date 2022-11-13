@@ -1,0 +1,19 @@
+/* Media-queries for mobile */
+
+@media screen and (max-width: 768px) { 
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+
+    .logo {
+        padding: 22px 0px 22px 0px;
+    }
+
+    /* lodging */
+
+    .lodging-row {
+        flex-direction: column;
+    }
+}
