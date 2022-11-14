@@ -2,18 +2,74 @@
 
 @media screen and (max-width: 768px) { 
     body {
+        max-width: 768px;
         padding: 0;
+        margin: 0;
     }
 
     /* nav */
 
-    .logo {
+    nav {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .menu {
         padding: 22px 0px 22px 0px;
+        margin: 0;
+        /* display: flex; */
+        justify-content: left;
+        /* flex-direction: row; */
+        width: 100%;
+    }
+
+    .menu a {
+        margin: 0px;   
+        padding: 0px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu li {
+        border: 1px solid yellowgreen; /* temp */
+        border-bottom: 3px solid #0065FC;
+        padding: 10px;
+    }
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 22px 0px 37px 0px;
+    }
+
+    .logo img {
+        width: auto;
+        height: auto;
+        max-width: 61px;
+        max-height: 100%;
     }
 
     /* lodging */
 
     .lodging-row {
         flex-direction: column;
+    }
+
+    /* temp */
+
+    .lodging-popular-card {
+        overflow: hidden;
+    }
+
+    .activities-card {
+        overflow: hidden;
+    }
+
+    footer {
+        overflow: hidden;
     }
 }
