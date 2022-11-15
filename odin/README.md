@@ -6,4 +6,4 @@ Ceci est le dossier consacré aux projets que j'ai mené en suivant le curriculu
 
 ## Projets 
 
-- [Landing Page](https://trrb.github.io/formation/odin/landing-page/index.html)
+- [Landing Page](https://trrb.github.io/edu/odin/landing-page/index.html)
