@@ -81,16 +81,16 @@ nav {
     margin-bottom: 53px;
 }
 
-nav a {
+.menu a {
     padding: 45px;
 }
 
-nav a:hover {
+.menu a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 
-nav ul li {
+.menu ul li {
     display: inline;
 }
 
@@ -125,6 +125,11 @@ nav ul li {
 
 .search-container {
     margin-bottom: 32px;
+    font-size: 18px;
+}
+
+.search-container i {
+    padding: 6px;
 }
 
 .search-form {
@@ -136,9 +141,12 @@ nav ul li {
     border-radius: 10px 0 0 10px;
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
-    color: #000000;
     padding: 10px;
     text-align: center;
+}
+
+.search-location i {
+    color: #000000;
 }
 
 .search-input {
@@ -157,6 +165,10 @@ nav ul li {
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
+}
+
+.search-button-icon {
+    display: none;
 }
 
 
