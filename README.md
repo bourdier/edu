@@ -13,8 +13,8 @@ J'ai commencé en septembre 2022.
 # Projets 
 ## The Odin Project
 
-- [Landing Page](https://trrb.github.io/formation/odin/landing-page/index.html)
+- [Landing Page](https://trrb.github.io/edu/odin/landing-page/index.html)
 
 ## Openclassrooms
 
-- [Booki](https://trrb.xyz/formation/openclassrooms/booki/index.html)
+- [Booki](https://trrb.github.io/edu/openclassrooms/booki/index.html)
