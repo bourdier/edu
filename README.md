@@ -17,4 +17,4 @@ J'ai commencé en septembre 2022.
 
 ## Openclassrooms
 
-- [Booki](https://trrb.github.io/edu/openclassrooms/booki/index.html)
+- [Booki](https://trrb.github.io/edu/oc/booki/index.html)
