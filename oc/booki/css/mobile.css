@@ -138,11 +138,6 @@
         text-align: left;
     }
 
-    .filter-container button:hover {
-        filter: drop-shadow(0px 3px 2px #D9D9D9);
-        background-color: #FFFFFF;
-    }
-
     .filter-container i {
         font-size: 17px;
     }
@@ -171,6 +166,7 @@
     }
 
     .lodging-row {
+        display: flex;
         flex-direction: column;
         gap: 12px;
         padding-bottom: 12px;

@@ -9,8 +9,6 @@
         margin: 0;
     }
 
-
-
     /* lodging-here */
 
 
@@ -38,7 +36,7 @@
     }
     
     .lodging-card {
-        width: 245px;
+        width: 100%;
         height: 200px;
         max-width: auto;
         max-height: auto;

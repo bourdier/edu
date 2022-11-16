@@ -268,10 +268,11 @@ nav {
     flex-direction: column;
     max-width: 880px;
     width: 100%;
-    height:200px;
+    height: auto;
+    max-height:250px; /* 200px d'origine */
     background-color: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0px 10px 10px #e7e7e7;
+    box-shadow: 0px 10px 10px #D2D2D2;
     gap: 4px;
 }
 
@@ -315,12 +316,15 @@ nav {
 }
 
 .lodging-row {
-    gap: 32px;
-    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
 
 .show-more {
-    padding-bottom: 32px;
+    padding: 40px 0px 32px;
 }
 
 
