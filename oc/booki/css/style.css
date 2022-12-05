@@ -483,7 +483,7 @@ nav {
     box-shadow: 0px 10px 10px #ececec;
 }
 
-.activities-card img {
+.activities-card-img {
     position: absolute;
     border-radius: 10px;
     width: 100%;
@@ -492,6 +492,25 @@ nav {
     max-height: auto;
     object-fit: cover;
 }
+
+.ac-1 {
+    background: center url("../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+}
+
+.ac-2 {
+    background: center url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+}
+.ac-3 {
+    background: center url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+}
+.ac-4 {
+    background: center url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+}
+
 
 .activities-title {
     margin: 0;
