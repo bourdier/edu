@@ -481,6 +481,7 @@ nav {
     margin: 0;
     padding: 0;
     box-shadow: 0px 10px 10px #ececec;
+    overflow: hidden;
 }
 
 .activities-card-img {
@@ -511,7 +512,6 @@ nav {
     background-size: cover;
 }
 
-
 .activities-title {
     margin: 0;
     padding: 0;
@@ -524,7 +524,7 @@ nav {
 
 .activities-title h3 {
     margin: 0;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
 }
 
 .activities-row {
