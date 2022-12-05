@@ -1,6 +1,4 @@
-
-/* media-queries tablet */
-
+/* tablet */
 @media screen and (max-width: 992px) { 
 
     body {
@@ -75,7 +73,7 @@
     }
 
     .lodging-popular-card img { 
-        max-width: 106px;
+        min-width: 106px;
         max-height: 144px;
     }
 
