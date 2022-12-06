@@ -320,7 +320,7 @@ nav {
 
 .lodging-card a::before {
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -447,7 +447,7 @@ nav {
 
 .lodging-popular-card a::before {
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -536,7 +536,7 @@ nav {
 
 .activities-card a::after {
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
