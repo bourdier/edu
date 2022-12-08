@@ -3,9 +3,9 @@
 body {
     background-color: #ffffff;
     font-family: 'Raleway';
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
-    padding: 45px 50px 0px 50px;
+    padding: 45px 50px;
 }
 
 header i {
@@ -310,7 +310,7 @@ nav {
     max-width: 880px;
     width: 100%;
     height: auto;
-    max-height:250px; /* 200px d'origine */
+    max-height:248px;
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 10px 10px #D2D2D2;
@@ -345,6 +345,11 @@ nav {
     font-size: 12px;
     padding: 0;
 }
+/* 
+.rating-stars {
+    position: absolute;
+    bottom: 0;
+} */
 
 .rating-stars ul {
     display: flex;
@@ -557,11 +562,3 @@ footer li {
     margin: 0;
     padding: 12px;
 }
-
-
-/* media-queries tablet */
-
-
-
-/* Media-queries for mobile */
-
