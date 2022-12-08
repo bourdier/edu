@@ -548,9 +548,9 @@ nav {
 
 footer {
     display: flex;
+    justify-content: space-between;
     background-color:#F2F2F2;
     padding: 45px 120px;
-    gap: 240px;
 }
 
 footer li {
