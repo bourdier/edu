@@ -315,6 +315,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0px 10px 10px #D2D2D2;
     gap: 4px;
+    padding-bottom: 25px;
 }
 
 
@@ -337,6 +338,11 @@ nav {
 .rating-stars,
 .lodging-info {
     margin: 3px 3px 3px 0px;
+}
+
+.rating-stars.fixed-bottom {
+  position: absolute;
+  bottom: 5px;
 }
 
 .rating-stars li {
@@ -464,6 +470,10 @@ nav {
     flex-direction: column;
     padding: 16px 16px 0px 16px;
     word-break: break-word;
+}
+
+.lodging-popular-content h3 {
+  max-height: 40px;
 }
 
 /* activities */
