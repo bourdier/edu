@@ -5,6 +5,7 @@
     --paragraph: #ABD1C6;
     --link: #F9BC60;
     --link-hover: #ffd9a0;
+    --link-fade: #f9bc60ab;
 }
 
 /* general */
@@ -97,10 +98,19 @@ header a:hover {
 .menu a {
     color: var(--link);
     font-size: 25px;
+    
 }
 
 .menu a:hover {
-    color: var(--link-hover)
+    color: var(--link-hover);
+}
+
+.back-arrow a {
+    color: var(--link-fade);
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 25px;
 }
 
 header img {
@@ -128,12 +138,6 @@ header img {
     padding: 14px 35px 0px;
 }
 
-/* oc */
-
-.oc ol {
-    
-}
-
 @media screen and (max-width: 700px) { 
     body {
         padding: 50px 25px 0px 25px;
@@ -152,6 +156,10 @@ header img {
 
     .content {
         padding: 14px 10px 0px;
+    }
+
+    .back-arrow {
+        display: none;
     }
 
 }
