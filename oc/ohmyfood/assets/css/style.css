@@ -56,6 +56,10 @@ body {
     margin-right: 17px;
 }
 
+.grey-bg {
+    background-color: #F6F6F6;
+}
+
 /* Main */
 
 main {
@@ -64,15 +68,47 @@ main {
 
 .info {
     text-align: center;
-    margin: 0 34px 60px;
+    padding: 0 34px 60px;
 }
 
 .info button {
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    margin: auto;
+    padding: 10px 20px;
+    max-width: 218px;
+    height: 50px;
+    background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
     color: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border: none;
     font: 500 16px 'Roboto';
-    height: 50px;
+}
+
+.function {
+    padding: 50px 20px;
+}
+
+.function ul {
+    padding: 0;
+}
+
+.function-steps-card {
+    list-style-type: none;
+    width: 320px;
+    height: 70px;
+    background: #F6F6F6; /* #F7F7F7 */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.function-steps-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.function-steps-card p {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
