@@ -182,52 +182,6 @@
         display: none;
     }
 
-    /* .lp-1 {
-        background: center url("../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lp-2 {
-        background: center url("../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lp-3 {
-        background: center url("../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-        background-size: cover;
-    }
-
-    .lh-1 {
-        background: center url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lh-2 {
-        background: center url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lh-3 {
-        background: center url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lh-4 {
-        background: center url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lh-5 {
-        background: center url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lh-6 {
-        background: center url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-        background-size: cover;
-    } */
-
-
     /* lodging-popular */
     
     .lodging-popular {
@@ -254,21 +208,6 @@
         max-height: 144px;
     }
 
-    /* .lp-1 {
-        background: center url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lp-2 {
-        background: center url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .lp-3 {
-        background: center url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-        background-size: cover;
-    } */
-
     /* activities */
     
     #activities {
@@ -288,24 +227,6 @@
         gap: 24px;
         padding: 0;
     }
-
-    /* .ac-1 {
-        background: center url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-        background-size: cover;
-    }
-    
-    .ac-2 {
-        background: center url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-        background-size: cover;
-    }
-    .ac-3 {
-        background: center url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-        background-size: cover;
-    }
-    .ac-4 {
-        background: center url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-        background-size: cover;
-    } */
 
     /* footer */
     footer {

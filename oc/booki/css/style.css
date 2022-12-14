@@ -292,7 +292,7 @@ nav {
 
 .lodging-card a::before { /* Pour que la card entière soit cliquable */
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -408,7 +408,7 @@ nav {
 
 .lodging-popular-card a::before { /* Pour que la card entière soit cliquable */
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -483,7 +483,7 @@ nav {
 
 .activities-card a::after { /* Pour que la card entière soit cliquable */
     content: "";
-    /* position: absolute; */
+    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
