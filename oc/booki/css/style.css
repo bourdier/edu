@@ -454,8 +454,6 @@ nav {
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    max-width: auto;
-    max-height: auto;
     object-fit: cover;
 }
 
