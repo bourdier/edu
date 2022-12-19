@@ -100,3 +100,36 @@
     }
     
 }
+
+@media screen and (max-width: 973px) { 
+
+    .filter-container ul li {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 910px) { 
+    
+    .filter-container ul li:first-of-type {
+        padding-left: 5px;
+    }
+
+    .filter-container ul li {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 855px) { 
+
+    .mobile-dog {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 772px) { 
+
+    .filter-container ul li:first-of-type {
+        padding-left: 1px;
+    }
+}

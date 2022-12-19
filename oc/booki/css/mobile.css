@@ -147,6 +147,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .mobile-dog {
+        display: contents;
+    }
+
     /* information */
     .info-container {
         padding-top: 23px;
