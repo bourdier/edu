@@ -1,5 +1,5 @@
 /* mobile */
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
     body {
         max-width: 768px;
         padding: 0;
