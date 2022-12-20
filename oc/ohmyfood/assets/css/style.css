@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
+:root {
+    --primary: #9356DC;
+    --grey: #353535;
+    --bg: #F6F6F6;
+}
+
 body {
     margin: 0;
 }
@@ -31,20 +37,20 @@ body {
 
 .location {
     font-family: 'Roboto';
-    background-color: #EAEAEA;
+    background-color: var(--bg);
     padding: 16px 0px;
 }
 
 .location input {
     border: none;
-    background-color: #EAEAEA;
+    background-color: var(--bg);
     font-size: 16px;
     color: #353535;
     width: 110px;
 }
 
 .location input::placeholder {
-    color: #353535;
+    color: var(--grey);
 }
 
 .location input:focus {
@@ -52,12 +58,12 @@ body {
 }
 
 .location i {
-    color: #353535;
+    color: var(--grey);
     margin-right: 17px;
 }
 
 .grey-bg {
-    background-color: #F6F6F6;
+    background-color: var(--bg);
 }
 
 /* Main */
@@ -84,6 +90,8 @@ main {
     font: 500 16px 'Roboto';
 }
 
+/* functions */
+
 .function {
     padding: 50px 20px;
 }
@@ -92,23 +100,31 @@ main {
     padding: 0;
 }
 
-.function-steps-card {
-    list-style-type: none;
+.fn-steps {
+    position: relative;
+}
+
+.fn-card {
+    display: flex;
     width: 320px;
-    height: 70px;
-    background: #F6F6F6; /* #F7F7F7 */
+    min-height: 70px;
+    max-height: 70px;
+    background: var(--bg);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     margin-bottom: 25px;
+    margin-left:12px;
 }
 
-.function-steps-card:last-of-type {
-    margin-bottom: 0;
+.fn-number {
+    position: absolute;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 100%;
+    left: 0px;
 }
 
-.function-steps-card p {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+.fn-content {
+    margin: auto;
 }
