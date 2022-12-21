@@ -32,7 +32,6 @@ body {
 /* Header > logo + location */
 
 .logo {
-    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -201,14 +200,14 @@ main {
     object-fit: cover;
 }
 
-/* .rs-card a::before { 
+.rs-card a::before { 
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-} */
+}
 
 .rs-content {
     position: absolute;
