@@ -300,6 +300,10 @@ main {
     margin-bottom: 5px;
 }
 
+.menu-plats, .menu-desserts {
+    margin-top: 40px;
+}
+
 .menu-title {
     border-bottom: 3px solid #99E2D0;
     width: 40px;
@@ -339,6 +343,7 @@ main {
 .menu-price {
     font: 700 15px 'Roboto';
     text-align: center;
+    margin-right: 5px;
 }
 
 .menu-check {
