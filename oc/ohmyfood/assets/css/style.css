@@ -325,15 +325,20 @@ main {
     font: 500 18px 'Roboto';
 }
 
+.menu-bottom-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
 .menu-description {
     font: 300 15px 'Roboto';
-    margin-top: 5px;
+    height: 100%;
 }
 
 .menu-price {
     font: 700 15px 'Roboto';
     text-align: center;
-    margin: 25px; /* temp */
 }
 
 .menu-check {
