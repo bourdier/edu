@@ -5,7 +5,8 @@
 :root {
     --primary: #9356DC;
     --grey: #353535;
-    --grey-light: #7E7E7E;
+    --grey2: #EAEAEA;
+    --grey3: #7E7E7E;
     --bg: #F6F6F6;
 }
 
@@ -38,13 +39,13 @@ body {
 
 .location {
     font-family: 'Roboto';
-    background-color: var(--bg);
+    background-color: var(--grey2);
     padding: 16px 0px;
 }
 
 .location input {
     border: none;
-    background-color: var(--bg);
+    background-color: var(--grey2);
     font-size: 16px;
     color: #353535;
     width: 110px;
@@ -128,7 +129,7 @@ main {
  
 .fn-icon {
     position: absolute;
-    color: var(--grey-light);
+    color: var(--grey3);
     font-size: 20px;
     top: 35%; /* temp */
     left: 33px; /* temp */
