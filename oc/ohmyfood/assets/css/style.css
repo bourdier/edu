@@ -208,3 +208,39 @@ main {
     color: #008766;
     font: 500 14px 'Roboto';
 }
+
+/* footer */
+
+footer {
+    color: #fff;
+    background: var(--grey);
+    font: 400 16px 'Roboto';
+    padding: 22px 25px
+}
+
+.footer-logo {
+    font: 400 18px 'Shrikhand';
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+footer li {
+    margin-bottom: 7px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer i {
+    position: absolute;
+}
+
+.footer-text {
+    margin-left: 30px;
+}
