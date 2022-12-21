@@ -5,6 +5,7 @@
 :root {
     --primary: #9356DC;
     --grey: #353535;
+    --grey-light: #7E7E7E;
     --bg: #F6F6F6;
 }
 
@@ -122,8 +123,17 @@ main {
     background-color: var(--primary);
     border-radius: 100%;
     left: 0px;
+    top: 50%;
 }
  
+.fn-icon {
+    position: absolute;
+    color: var(--grey-light);
+    font-size: 20px;
+    top: 35%; /* temp */
+    left: 33px; /* temp */
+}
+
 
 .fn-content {
     margin: auto;
