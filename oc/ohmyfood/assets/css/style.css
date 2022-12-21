@@ -94,6 +94,7 @@ main {
     border-radius: 25px;
     border: none;
     font: 500 16px 'Roboto';
+    cursor: pointer;
 }
 
 /* functions */
@@ -108,7 +109,8 @@ main {
 
 .fn-card {
     display: flex;
-    width: 320px;
+    width: auto;
+    max-width: 320px;
     min-height: 70px;
     max-height: 70px;
     background: var(--bg);
