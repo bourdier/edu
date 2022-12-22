@@ -348,6 +348,7 @@ main {
     margin-bottom: 12px;
     box-shadow: 0px 4px 15.0431px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .menu-food {
@@ -368,8 +369,6 @@ main {
 .menu-description {
     font: 300 15px 'Roboto';
     height: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .menu-price {
@@ -379,17 +378,16 @@ main {
 }
 
 .menu-check {
-    display: block;
-    position: absolute;
-    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
     height: 70.5px;
     background: var(--green);
     border-radius: 0 15px 15px 0;
-    right: -60px;
+    margin-right: -60px;
 }
 
 .menu-card:hover > .menu-check {
-    right: 16px;
+    margin-right: 0px;
 }
 
 .menu-check i {
