@@ -248,11 +248,6 @@ main {
     margin: 25px;
 }
 
-.rs-like:hover { /* temp/test */
-    color: red;
-    cursor: pointer;
-}
-
 .rs-new {
     position: absolute;
     right: 3.5%;
@@ -312,6 +307,14 @@ main {
 .menu-like {
     font-size: 21px;
     margin-left: 40px;
+}
+
+.like:hover {
+    cursor: pointer;
+    background-image: linear-gradient(218deg, #9356dc, #ff79da);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .menu h2 {
