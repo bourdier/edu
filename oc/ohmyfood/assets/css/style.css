@@ -175,11 +175,19 @@ main {
     display: inline-flex;
     align-items: center;
     width: 100%;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .fn-content i {
     margin-right: 20px;
     margin-left: 33px;
+    font-size: 20px;
+    color: var(--grey3);
+}
+
+.fn-content:hover > i {
+    color: var(--primary);
 }
 
 /* Restaurants */
