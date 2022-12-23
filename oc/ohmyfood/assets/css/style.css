@@ -127,6 +127,14 @@ main {
     border: none;
     font: 500 16px 'Roboto';
     cursor: pointer;
+    transition: background .3s ease-out, box-shadow .3s ease-out;
+}
+
+.info button:hover {
+    opacity: 0.85;
+    background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+    transition: all .3s ease-in;
 }
 
 
@@ -151,10 +159,13 @@ main {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     margin: 25px auto;
+    transition: background 150ms ease-out, box-shadow 150ms ease-out;
 }
 
 .fn-card:hover {
     background: var(--purple);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    transition: all 150ms ease-in;
 }
 
 .fn-number {
@@ -184,10 +195,12 @@ main {
     margin-left: 33px;
     font-size: 20px;
     color: var(--grey3);
+    transition: color 150ms ease-in;
 }
 
 .fn-content:hover > i {
     color: var(--primary);
+    transition: color 150ms ease-in;
 }
 
 /* Restaurants */
@@ -199,6 +212,12 @@ main {
     border-radius: 15px;
     margin-bottom: 18px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 150ms ease-out;
+}
+
+.rs-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 150ms ease-in;
 }
 
 .rs-card img {
@@ -242,7 +261,33 @@ main {
     font: 300 17px 'Roboto';
 }
 
+.regular-heart {
+    position: absolute;
+    color: #000;
+    cursor: pointer;
+}
+
+.gradient-heart {
+    position: absolute;
+    background-image: linear-gradient(218deg, #9356dc, #ff79da);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+    opacity: 0;
+    transition: 150ms ease-out;
+}
+
+.gradient-heart:hover {
+    background-image: linear-gradient(218deg, #9356dc, #ff79da);
+    opacity: 1;
+    transition: 150ms ease-in;
+}
+
+
 .rs-like {
+    position: absolute;
+    right: 25px;
     z-index: 1;
     font-size: 21px;
     margin: 25px;
@@ -306,15 +351,7 @@ main {
 
 .menu-like {
     font-size: 21px;
-    margin-left: 40px;
-}
-
-.like:hover {
-    cursor: pointer;
-    background-image: linear-gradient(218deg, #9356dc, #ff79da);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    margin: 0px 40px 20px 40px;
 }
 
 .menu h2 {
