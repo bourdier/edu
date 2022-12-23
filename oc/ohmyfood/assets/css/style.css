@@ -30,6 +30,34 @@ body {
     flex-direction: column;
 }
 
+/* Animations */
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  
 /* Header > logo + location */
 
 .logo {
@@ -127,14 +155,14 @@ main {
     border: none;
     font: 500 16px 'Roboto';
     cursor: pointer;
-    transition: background .3s ease-out, box-shadow .3s ease-out;
+    transition: background 250ms ease-out, box-shadow 250ms ease-out;
 }
 
 .info button:hover {
     opacity: 0.85;
     background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
-    transition: all .3s ease-in;
+    transition: all 150ms ease-in;
 }
 
 
@@ -284,7 +312,6 @@ main {
     transition: 150ms ease-in;
 }
 
-
 .rs-like {
     position: absolute;
     right: 25px;
@@ -421,10 +448,14 @@ main {
     background: var(--green);
     border-radius: 0 15px 15px 0;
     margin-right: -60px;
+    transition: 250ms ease-out;
 }
 
 .menu-card:hover > .menu-check {
     margin-right: 0px;
+    -webkit-animation: slide-in-right 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 150ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: 250ms ease-in;
 }
 
 .menu-check i {
