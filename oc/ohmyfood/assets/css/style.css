@@ -565,4 +565,17 @@ footer i {
         justify-content: center;
     }
 
+    /* ------ */
+    /* Restaurants.html */
+    /* ------ */
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-container {
+        width: 1055px;
+    }
+
 }
