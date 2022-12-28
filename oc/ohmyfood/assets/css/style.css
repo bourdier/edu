@@ -502,3 +502,21 @@ footer i {
 .footer-text {
     margin-left: 30px;
 }
+
+/* Desktop */
+@media screen and (min-width: 1024px) { 
+
+    .layout {
+        padding: 20px 192px; 
+    }
+
+    .fn-container {
+        display: flex;
+        margin: 0;
+    }
+
+    .fn-card {
+        width: 335px;
+        margin-left: 24px;
+    }
+}
