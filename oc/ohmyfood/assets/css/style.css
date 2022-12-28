@@ -128,7 +128,7 @@ body {
     background-color: var(--bg);
 }
 
-.layout {
+.layout, .rs-layout {
     padding: 50px 20px;
 }
 
@@ -510,6 +510,10 @@ footer i {
         padding: 20px 192px; 
     }
 
+    .rs-layout {
+        padding: 20px 0px 20px 192px;
+    }
+
     .fn-container {
         display: flex;
         margin: 0;
@@ -519,4 +523,15 @@ footer i {
         width: 335px;
         margin-left: 24px;
     }
+
+    .cards-container {
+        display: flex;
+        gap: 32px;
+    }
+
+    .rs-card {
+        width: 335px;
+    }
+
+
 }
