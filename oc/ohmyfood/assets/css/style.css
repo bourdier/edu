@@ -506,6 +506,8 @@ footer i {
 /* Desktop */
 @media screen and (min-width: 1024px) { 
 
+    /* General */
+    
     .layout {
         padding: 20px 192px; 
     }
@@ -514,15 +516,18 @@ footer i {
         padding: 20px 0px 20px 192px;
     }
 
+    /* Fonctions */
+
     .fn-container {
         display: flex;
-        margin: 0;
     }
 
     .fn-card {
         width: 335px;
         margin-left: 24px;
     }
+
+    /* Restaurants */
 
     .cards-container {
         display: flex;
@@ -533,5 +538,31 @@ footer i {
         width: 335px;
     }
 
+    /* Footer */
+
+    footer {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    footer ul,
+    footer li {
+        margin: 0;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        order: 1;
+    }
+
+    .footer-links {
+        gap: 40px;
+    }
+
+    .footer-logo, 
+    .footer-links {
+        display: inline-flex;
+        justify-content: center;
+    }
 
 }
