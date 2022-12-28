@@ -347,22 +347,22 @@ main {
 .menu {
     position: relative;
     width: 100%;
-    height: 100vh;
 }
 
 .menu img {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 275px;
     object-fit: cover;
 }
 
 .menu-container {
-    position: absolute;
-    top: 220px;
     width: 100%;
     border-radius: 25px 25px 0 0;
     background-color: var(--grey2);
+    margin-top: -25px;
+    z-index: 1;
+    position: relative;
 }
 
 .menu-content {
@@ -555,6 +555,16 @@ footer i {
     }
 
     /* Restaurants */
+
+    .menu-container {
+        position: relative;
+        margin-top: 220px;
+        z-index: 1;
+    }
+
+    .menu img {
+        position: absolute;
+    }
 
     .cards-container {
         display: flex;
