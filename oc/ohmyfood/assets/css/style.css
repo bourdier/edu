@@ -30,6 +30,80 @@ body {
     flex-direction: column;
 }
 
+/* Loader */
+.loader {
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    animation: hide .3s ease-out;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;  
+}
+
+.loader i {
+    font-size: 48px;
+    background: -webkit-linear-gradient(45deg, #974ff0 0%, #ff79da 33%,#824bc5 66%, #ff79da 100%);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: loader 1s linear infinite;
+    -moz-animation: loader 1s linear infinite;
+    animation: loader 1s linear infinite;
+}
+
+
+.slide-up {
+    position: relative;
+    animation: .7s slide-up;
+}
+
+.loader-bar {
+    position: absolute;
+    top: -32px;
+    left: -22px;
+}
+
+.loader svg {
+    transform: rotate(-90deg);
+    stroke-dasharray: 251; /* (2PI * 40px) */
+    stroke-dashoffset: 251;
+    animation: offsettozero 2s linear forwards;
+    animation-delay: .7s;
+  }
+  
+  @keyframes offsettozero {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+@-webkit-keyframes loader {
+    0% {
+        background-position: 100% 0%
+    }
+    100% {
+        background-position: 15% 100%
+    }
+}
+
+@-webkit-keyframes slide-up {
+    from {
+        margin-top: 100%;
+
+    }
+    to {
+        margin: 0;
+    }
+}
+
+  @keyframes hide {
+    to {
+        margin-top: -100%;
+    }
+  }
+
 /* Animations */
 
 @-webkit-keyframes slide-in-right {
