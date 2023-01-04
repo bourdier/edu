@@ -636,6 +636,10 @@ footer i {
   }
 
   .rs-layout {
+    padding: 0;
+  }
+
+  .restaurant h1 {
     padding: 20px 0px 20px 192px;
   }
 
@@ -665,10 +669,19 @@ footer i {
   .cards-container {
     display: flex;
     gap: 32px;
+    overflow-x: scroll;
   }
 
   .rs-card {
-    width: 335px;
+    min-width: 335px;
+  }
+
+  .rs-firt {
+    margin-left: 192px;
+  }
+
+  .rs-last {
+    margin-right: 192px;
   }
 
   /* Footer */
