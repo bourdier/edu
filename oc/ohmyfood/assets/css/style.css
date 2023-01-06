@@ -221,6 +221,11 @@ main {
   padding: 0 34px 60px;
 }
 
+.info a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .info button {
   margin: auto;
   padding: 10px 20px;
