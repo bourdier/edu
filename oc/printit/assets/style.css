@@ -129,13 +129,13 @@ header {
 .arrow_left {
 	position: absolute;
 	z-index: 1;
-	top: 280px;
+	top: 290px;
 	left: 10px;
 }
 .arrow_right {
 	position: absolute;
 	z-index: 1;
-	top: 280px;
+	top: 290px;
 	right: 10px;
 }
 /* Gestion des points du carrousel */
