@@ -126,10 +126,16 @@ header {
 #banner .arrow {
 	position: absolute;
 }
-#banner .arrow_left {
+.arrow_left {
+	position: absolute;
+	z-index: 1;
+	top: 280px;
 	left: 10px;
 }
-#banner .arrow_right {
+.arrow_right {
+	position: absolute;
+	z-index: 1;
+	top: 280px;
 	right: 10px;
 }
 /* Gestion des points du carrousel */
